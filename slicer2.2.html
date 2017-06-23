@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>Slicer 2.2</title>
+  
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+ <ul class="navbar">
+	<li><a href="/index.html">Startseite</a>
+	<li><a href="/Javascript/javascript.html">Javascript</a>
+	<li><a href="/PHP/php.html">PHP</a>
+	<li><a href="vulnerabilities.html">Vulns</a>
+ </ul>
+  
+ <center><h1> Slicer 2.2</h1>
+ <br />
+ <br />
+	<form name="form1" action="slicerfwd.php" method="post">
+		<textarea 
+			cols="150"
+			rows="40" 
+			name="eingabe">
+		</textarea>
+    <br />
+    <br />
+    Art:
+    <select name="art">
+      <option value="@">Email</option>
+    </select>  
+    <br />
+    <br />
+	Filtern nach:
+	<select name="filterung">
+		<option value="all">Keine Filterung</option>
+		<option value=".de">.de</option>
+		<option value=".com">.com</option>
+		<option value=".net">.net</option>
+		<option value=".ru">.ru</option>
+		<option value=".org">.org</option>
+		<option value="web.de">web.de</option>
+		<option value="gmx.de">gmx.de</option>
+		<option value="hotmail.com">hotmail.com</option>
+		<option value="gmail.com">gmail.com</option>
+		<option value="yahoo.de">yahoo.de</option>
+		<option value="freenet.de">freenet.de</option>
+		<option value="t-online.de">t-online.de</option>
+		<option value="aol.com">aol.com</option>
+		<option value="omail.pro">omail.pro</option>
+	</select>
+	<br />
+	<br />
+    Begrenzung:
+    <select name="begrenzung">
+      <option value=":">:</option>
+      <option value="-">-</option>
+      <option value=" ">Leer</option>
+	  <option value="\r\n">Zeilenumbruch</option>
+    </select>
+    <br />
+    <br />
+	<input type="checkbox" name="duplikate"/> Duplikate entfernen
+	<br />
+	<br />
+    <input type="submit" value="Slice" />
+	</form>
+  <br />
+  <br />
+ </center>
+  <div class="log"><a href="/PHP/Slicer 2.2/changelog.txt">Changelog 2.2</a></div>
+ </body>
+</html>
